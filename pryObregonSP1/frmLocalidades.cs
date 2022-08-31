@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace pryObregonSP1
 {
@@ -19,7 +20,20 @@ namespace pryObregonSP1
 
         private void btnCrear1_Click(object sender, EventArgs e)
         {
+            
+            using (FileStream fs = File.Create("./localidades.txt"))
+            {
+                
+            }
+        }
 
+        private void btnEliminar1_Click(object sender, EventArgs e)
+        {
+            File.Delete("./localidades.txt");
+        }
+
+        private void btnAgregar1_Click(object sender, EventArgs e)
+        {
         }
     }
 }

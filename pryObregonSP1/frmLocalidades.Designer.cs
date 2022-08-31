@@ -70,6 +70,7 @@
             this.btnAgregar1.TabIndex = 3;
             this.btnAgregar1.Text = "Agregar";
             this.btnAgregar1.UseVisualStyleBackColor = true;
+            this.btnAgregar1.Click += new System.EventHandler(this.btnAgregar1_Click);
             // 
             // btnEliminar1
             // 
@@ -79,6 +80,7 @@
             this.btnEliminar1.TabIndex = 4;
             this.btnEliminar1.Text = "Eliminar Archivo";
             this.btnEliminar1.UseVisualStyleBackColor = true;
+            this.btnEliminar1.Click += new System.EventHandler(this.btnEliminar1_Click);
             // 
             // frmLocalidades
             // 
