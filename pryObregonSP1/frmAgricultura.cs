@@ -39,5 +39,10 @@ namespace pryObregonSP1
             frmCantidad frmCan = new frmCantidad();
             frmCan.ShowDialog();
         }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

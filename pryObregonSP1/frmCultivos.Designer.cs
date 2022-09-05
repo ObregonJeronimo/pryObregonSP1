@@ -34,6 +34,8 @@
             this.btnCrear2 = new System.Windows.Forms.Button();
             this.txtCultivo1 = new System.Windows.Forms.TextBox();
             this.lblCultivo1 = new System.Windows.Forms.Label();
+            this.txtIdentificador2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEliminar2
@@ -44,15 +46,17 @@
             this.btnEliminar2.TabIndex = 9;
             this.btnEliminar2.Text = "Eliminar Archivo";
             this.btnEliminar2.UseVisualStyleBackColor = true;
+            this.btnEliminar2.Click += new System.EventHandler(this.btnEliminar2_Click);
             // 
             // btnAgregar2
             // 
-            this.btnAgregar2.Location = new System.Drawing.Point(62, 96);
+            this.btnAgregar2.Location = new System.Drawing.Point(63, 136);
             this.btnAgregar2.Name = "btnAgregar2";
             this.btnAgregar2.Size = new System.Drawing.Size(97, 29);
             this.btnAgregar2.TabIndex = 8;
             this.btnAgregar2.Text = "Agregar";
             this.btnAgregar2.UseVisualStyleBackColor = true;
+            this.btnAgregar2.Click += new System.EventHandler(this.btnAgregar2_Click);
             // 
             // btnCrear2
             // 
@@ -62,6 +66,7 @@
             this.btnCrear2.TabIndex = 7;
             this.btnCrear2.Text = "Crear Archivo";
             this.btnCrear2.UseVisualStyleBackColor = true;
+            this.btnCrear2.Click += new System.EventHandler(this.btnCrear2_Click);
             // 
             // txtCultivo1
             // 
@@ -79,12 +84,30 @@
             this.lblCultivo1.TabIndex = 5;
             this.lblCultivo1.Text = "Ingresar Cultivo";
             // 
+            // txtIdentificador2
+            // 
+            this.txtIdentificador2.Location = new System.Drawing.Point(39, 110);
+            this.txtIdentificador2.Name = "txtIdentificador2";
+            this.txtIdentificador2.Size = new System.Drawing.Size(144, 20);
+            this.txtIdentificador2.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(69, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Ingresar Identificador";
+            // 
             // frmCultivos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(223, 140);
+            this.ClientSize = new System.Drawing.Size(223, 171);
+            this.Controls.Add(this.txtIdentificador2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEliminar2);
             this.Controls.Add(this.btnAgregar2);
             this.Controls.Add(this.btnCrear2);
@@ -105,5 +128,7 @@
         private System.Windows.Forms.Button btnCrear2;
         private System.Windows.Forms.TextBox txtCultivo1;
         private System.Windows.Forms.Label lblCultivo1;
+        private System.Windows.Forms.TextBox txtIdentificador2;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -143,6 +143,7 @@
             // 
             // btnMostrar
             // 
+            this.btnMostrar.Enabled = false;
             this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMostrar.Location = new System.Drawing.Point(134, 184);
             this.btnMostrar.Name = "btnMostrar";
@@ -150,9 +151,11 @@
             this.btnMostrar.TabIndex = 8;
             this.btnMostrar.Text = "Mostrar Información";
             this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
             // txtLocalidad
             // 
+            this.txtLocalidad.Enabled = false;
             this.txtLocalidad.Location = new System.Drawing.Point(12, 119);
             this.txtLocalidad.Name = "txtLocalidad";
             this.txtLocalidad.Size = new System.Drawing.Size(100, 20);
@@ -160,6 +163,7 @@
             // 
             // txtCultivo
             // 
+            this.txtCultivo.Enabled = false;
             this.txtCultivo.Location = new System.Drawing.Point(134, 119);
             this.txtCultivo.Name = "txtCultivo";
             this.txtCultivo.Size = new System.Drawing.Size(100, 20);
@@ -167,6 +171,7 @@
             // 
             // txtCantidad
             // 
+            this.txtCantidad.Enabled = false;
             this.txtCantidad.Location = new System.Drawing.Point(255, 119);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 20);

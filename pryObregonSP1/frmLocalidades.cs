@@ -20,11 +20,9 @@ namespace pryObregonSP1
 
         private void btnCrear1_Click(object sender, EventArgs e)
         {
+
+            File.Create("./localidades.txt");
             
-            using (FileStream fs = File.Create("./localidades.txt"))
-            {
-                
-            }
         }
 
         private void btnEliminar1_Click(object sender, EventArgs e)
@@ -34,6 +32,29 @@ namespace pryObregonSP1
 
         private void btnAgregar1_Click(object sender, EventArgs e)
         {
+
+            TextWriter Write = new StreamWriter("./localidades.txt", true);
+
+            Write.WriteLine(Convert.ToString(txtIdentificador1.Text + " " + txtLocalidad1.Text));
+            Write.Close();
+
+
+            MessageBox.Show("Se ha guardado correctamente.", ":D", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            txtIdentificador1.Text = "";
+            txtLocalidad1.Text = "";
+            txtLocalidad1.Focus();
+
+        }
+
+        private void frmLocalidades_Load(object sender, EventArgs e)
+        {
+            if (txtLocalidad1.Text != "")
+            {
+                btnEliminar1.Enabled = true;
+                btnAgregar1.Enabled = true;
+            }
+            
         }
     }
 }

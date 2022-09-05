@@ -34,6 +34,8 @@
             this.btnCrear1 = new System.Windows.Forms.Button();
             this.btnAgregar1 = new System.Windows.Forms.Button();
             this.btnEliminar1 = new System.Windows.Forms.Button();
+            this.txtIdentificador1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblLocalidad1
@@ -64,7 +66,7 @@
             // 
             // btnAgregar1
             // 
-            this.btnAgregar1.Location = new System.Drawing.Point(62, 96);
+            this.btnAgregar1.Location = new System.Drawing.Point(62, 136);
             this.btnAgregar1.Name = "btnAgregar1";
             this.btnAgregar1.Size = new System.Drawing.Size(97, 29);
             this.btnAgregar1.TabIndex = 3;
@@ -82,12 +84,30 @@
             this.btnEliminar1.UseVisualStyleBackColor = true;
             this.btnEliminar1.Click += new System.EventHandler(this.btnEliminar1_Click);
             // 
+            // txtIdentificador1
+            // 
+            this.txtIdentificador1.Location = new System.Drawing.Point(40, 110);
+            this.txtIdentificador1.Name = "txtIdentificador1";
+            this.txtIdentificador1.Size = new System.Drawing.Size(144, 20);
+            this.txtIdentificador1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(65, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Ingresar Identificador";
+            // 
             // frmLocalidades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(223, 140);
+            this.ClientSize = new System.Drawing.Size(223, 171);
+            this.Controls.Add(this.txtIdentificador1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEliminar1);
             this.Controls.Add(this.btnAgregar1);
             this.Controls.Add(this.btnCrear1);
@@ -96,6 +116,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLocalidades";
             this.Text = "Localidades";
+            this.Load += new System.EventHandler(this.frmLocalidades_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,5 +129,7 @@
         private System.Windows.Forms.Button btnCrear1;
         private System.Windows.Forms.Button btnAgregar1;
         private System.Windows.Forms.Button btnEliminar1;
+        private System.Windows.Forms.TextBox txtIdentificador1;
+        private System.Windows.Forms.Label label1;
     }
 }
