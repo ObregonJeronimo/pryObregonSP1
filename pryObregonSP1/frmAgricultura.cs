@@ -36,13 +36,12 @@ namespace pryObregonSP1
 
         private void cantidadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCantidad frmCan = new frmCantidad();
+            frmProduccion frmCan = new frmProduccion();
             frmCan.ShowDialog();
         }
 
-        private void btnMostrar_Click(object sender, EventArgs e)
-        {
 
-        }
+
+
     }
 }

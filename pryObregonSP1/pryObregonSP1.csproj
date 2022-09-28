@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCantidad.cs">
+    <Compile Include="frmProduccion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCantidad.Designer.cs">
-      <DependentUpon>frmCantidad.cs</DependentUpon>
+    <Compile Include="frmProduccion.Designer.cs">
+      <DependentUpon>frmProduccion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCultivos.cs">
       <SubType>Form</SubType>
@@ -72,8 +72,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCantidad.resx">
-      <DependentUpon>frmCantidad.cs</DependentUpon>
+    <EmbeddedResource Include="frmProduccion.resx">
+      <DependentUpon>frmProduccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCultivos.resx">
       <DependentUpon>frmCultivos.cs</DependentUpon>

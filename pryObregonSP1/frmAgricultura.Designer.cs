@@ -35,14 +35,7 @@
             this.cultivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cantidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblProduccion = new System.Windows.Forms.Label();
-            this.lblLocalidad = new System.Windows.Forms.Label();
-            this.lblCultivo = new System.Windows.Forms.Label();
-            this.lblCantidad = new System.Windows.Forms.Label();
-            this.btnMostrar = new System.Windows.Forms.Button();
-            this.txtLocalidad = new System.Windows.Forms.TextBox();
-            this.txtCultivo = new System.Windows.Forms.TextBox();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +47,7 @@
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(367, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(278, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -89,7 +82,7 @@
             this.cantidadToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cantidadToolStripMenuItem.Image")));
             this.cantidadToolStripMenuItem.Name = "cantidadToolStripMenuItem";
             this.cantidadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cantidadToolStripMenuItem.Text = "Cantidad";
+            this.cantidadToolStripMenuItem.Text = "Producción";
             this.cantidadToolStripMenuItem.Click += new System.EventHandler(this.cantidadToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
@@ -99,98 +92,23 @@
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
-            // lblProduccion
+            // label1
             // 
-            this.lblProduccion.AutoSize = true;
-            this.lblProduccion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblProduccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblProduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProduccion.Location = new System.Drawing.Point(134, 35);
-            this.lblProduccion.Name = "lblProduccion";
-            this.lblProduccion.Size = new System.Drawing.Size(100, 22);
-            this.lblProduccion.TabIndex = 4;
-            this.lblProduccion.Text = "Producción";
-            // 
-            // lblLocalidad
-            // 
-            this.lblLocalidad.AutoSize = true;
-            this.lblLocalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocalidad.Location = new System.Drawing.Point(23, 82);
-            this.lblLocalidad.Name = "lblLocalidad";
-            this.lblLocalidad.Size = new System.Drawing.Size(77, 20);
-            this.lblLocalidad.TabIndex = 5;
-            this.lblLocalidad.Text = "Localidad";
-            // 
-            // lblCultivo
-            // 
-            this.lblCultivo.AutoSize = true;
-            this.lblCultivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCultivo.Location = new System.Drawing.Point(156, 82);
-            this.lblCultivo.Name = "lblCultivo";
-            this.lblCultivo.Size = new System.Drawing.Size(56, 20);
-            this.lblCultivo.TabIndex = 6;
-            this.lblCultivo.Text = "Cultivo";
-            // 
-            // lblCantidad
-            // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(270, 82);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(73, 20);
-            this.lblCantidad.TabIndex = 7;
-            this.lblCantidad.Text = "Cantidad";
-            // 
-            // btnMostrar
-            // 
-            this.btnMostrar.Enabled = false;
-            this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrar.Location = new System.Drawing.Point(134, 184);
-            this.btnMostrar.Name = "btnMostrar";
-            this.btnMostrar.Size = new System.Drawing.Size(100, 48);
-            this.btnMostrar.TabIndex = 8;
-            this.btnMostrar.Text = "Mostrar Información";
-            this.btnMostrar.UseVisualStyleBackColor = true;
-            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
-            // 
-            // txtLocalidad
-            // 
-            this.txtLocalidad.Enabled = false;
-            this.txtLocalidad.Location = new System.Drawing.Point(12, 119);
-            this.txtLocalidad.Name = "txtLocalidad";
-            this.txtLocalidad.Size = new System.Drawing.Size(100, 20);
-            this.txtLocalidad.TabIndex = 9;
-            // 
-            // txtCultivo
-            // 
-            this.txtCultivo.Enabled = false;
-            this.txtCultivo.Location = new System.Drawing.Point(134, 119);
-            this.txtCultivo.Name = "txtCultivo";
-            this.txtCultivo.Size = new System.Drawing.Size(100, 20);
-            this.txtCultivo.TabIndex = 10;
-            // 
-            // txtCantidad
-            // 
-            this.txtCantidad.Enabled = false;
-            this.txtCantidad.Location = new System.Drawing.Point(255, 119);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(100, 20);
-            this.txtCantidad.TabIndex = 11;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(59, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(162, 29);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Agricultura!";
             // 
             // frmAgricultura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(367, 244);
-            this.Controls.Add(this.txtCantidad);
-            this.Controls.Add(this.txtCultivo);
-            this.Controls.Add(this.txtLocalidad);
-            this.Controls.Add(this.btnMostrar);
-            this.Controls.Add(this.lblCantidad);
-            this.Controls.Add(this.lblCultivo);
-            this.Controls.Add(this.lblLocalidad);
-            this.Controls.Add(this.lblProduccion);
+            this.ClientSize = new System.Drawing.Size(278, 125);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmAgricultura";
@@ -210,14 +128,7 @@
         private System.Windows.Forms.ToolStripMenuItem cultivosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cantidadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.Label lblProduccion;
-        private System.Windows.Forms.Label lblLocalidad;
-        private System.Windows.Forms.Label lblCultivo;
-        private System.Windows.Forms.Label lblCantidad;
-        private System.Windows.Forms.Button btnMostrar;
-        private System.Windows.Forms.TextBox txtLocalidad;
-        private System.Windows.Forms.TextBox txtCultivo;
-        private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.Label label1;
     }
 }
 
